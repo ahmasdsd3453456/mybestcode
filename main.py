@@ -1,7 +1,7 @@
 import subprocess
 
 # List of Python scripts to run
-scripts = ["1_step.py", "2_step.py", "3_step.py" ,"1_step.py", "2_step1.py", "3_step.py"  , "1_step.py", "2_step2.py", "3_step.py,", "1_step.py", "2_step3.py", "3_step.py", "1_step.py", "2_step4.py", "3_step.py", "1_step.py", "2_step5.py", "3_step.py"]
+scripts = ["1_step.py", "2_step.py", "3_step.py" ,"1_step.py", "2_step1.py", "3_step.py", "1_step.py", "2_step2.py", "3_step.py,", "1_step.py", "2_step3.py", "3_step.py", "1_step.py", "2_step4.py", "3_step.py", "1_step.py", "2_step5.py", "3_step.py"]
 
 while True:
     for script in scripts:
