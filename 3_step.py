@@ -54,7 +54,9 @@ async def handle_videos(urls):
             # Extract URL and timer value from the JSON
             url = url_data["url"]
             timer = int(url.split("timer=")[1].split("&")[0]) + 5  # Extract timer value
-
+            if timer > 300:
+                print(f"Ignoring URL {url} as timer is greater than 300.")
+                continue
             # Schedule a new task and add to the set
             task = asyncio.create_task(play_video(context, url, timer))
             tasks.add(task)
